@@ -30,7 +30,7 @@ class AuthController extends ApiController
      */
     public function getTokenUser(UserInterface $user, JWTTokenManagerInterface $JWTManager): JsonResponse
     {   
-        dd($user);
+      
         
         return new JsonResponse(['token' => $JWTManager->create($user)]);
         

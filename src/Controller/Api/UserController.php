@@ -132,7 +132,6 @@ class UserController extends ApiController
 
 
 
-
     public function referenceFormat()
     {
         return 'REP' . substr(date('Y'), 2) . date('md') . uniqid();
